@@ -8,7 +8,13 @@
   ],
   "author": "Matthew Sessions",
   "license": "MIT",
+  "scripts": {
+    "test": "tape tests/*.spec.js"
+  },
   "dependencies": {
     "lorem-ipsum": "^1.0.3"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
   }
 }
