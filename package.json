@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "Generates models based off of json-schemas",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "json-schema"
   ],
   "author": "Matthew Sessions",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lorem-ipsum": "^1.0.3"
+  }
 }
