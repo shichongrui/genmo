@@ -15,6 +15,7 @@
     "lorem-ipsum": "^1.0.3"
   },
   "devDependencies": {
+    "jsonschema": "^1.0.2",
     "tape": "^4.2.2"
   }
 }
