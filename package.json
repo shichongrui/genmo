@@ -1,6 +1,6 @@
 {
   "name": "genmo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Generates models based off of json-schemas",
   "main": "index.js",
   "keywords": [
