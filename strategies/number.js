@@ -1,4 +1,11 @@
+var any = require('./any')
+
 module.exports = function (schema) {
+  var value = any(schema)
+  if (value) {
+    return value
+  }
+
   var max = getMax(schema)
   var min = getMin(schema)
   var num = Math.random() * (max - min) + min

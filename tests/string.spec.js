@@ -42,7 +42,15 @@ tape('string will generate matches for regular expressions', function (t) {
     pattern: regex
   }
   var s = string(schema)
-  console.log(s)
   t.equal(new RegExp(regex).test(s), true)
+  t.end()
+})
+
+tape('string returns a value from enum if present', function (t) {
+  var schema = {
+    type: 'integer',
+    enum: ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+  }
+  t.notEqual(schema.enum.indexOf(string(schema)), -1)
   t.end()
 })

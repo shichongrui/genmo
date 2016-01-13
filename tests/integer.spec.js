@@ -89,3 +89,12 @@ tape('integer respects multipleOf value', function (t) {
   t.equal(integer(schema) % multiple, 0)
   t.end()
 })
+
+tape('integer returns a value from enum if present', function (t) {
+  var schema = {
+    type: 'integer',
+    enum: [1,2,3,4,5,6,7,8,9,0]
+  }
+  t.notEqual(schema.enum.indexOf(integer(schema)), -1)
+  t.end()
+})
