@@ -16,7 +16,8 @@
     "test": "tape tests/*.spec.js"
   },
   "dependencies": {
-    "lorem-ipsum": "^1.0.3"
+    "lorem-ipsum": "^1.0.3",
+    "randexp": "0.4.2"
   },
   "devDependencies": {
     "jsonschema": "^1.0.2",
